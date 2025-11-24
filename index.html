@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zacznij grać na Roblox</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #4a00e0);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    opacity: 0.9;
+  }
+  .buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  a.button {
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffb000, #ff7f00);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+  }
+  a.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    height: 100%;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-25deg);
+    transition: 0.4s;
+  }
+  a.button:hover::before {
+    left: 120%;
+  }
+  a.button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px rgba(255, 140, 0, 0.7);
+  }
+  footer {
+    margin-top: 70px;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+  <h1>Witaj w grze!</h1>
+  <p>Kliknij jeden z przycisków, aby rozpocząć zabawę na Roblox.</p>
+  <div class="buttons">
+    <a href="https://www.roblox.com" target="_blank" class="button">Zacznij grać</a>
+    <a href="https://www.roblox.com/pl/games/14184086618/Obby-But-You-re-On-a-Bike" target="_blank" class="button">Zagraj w Obby na rowerze</a>
+  </div>
+  <footer>© 2025 Twoja Strona – Wszystkie prawa zastrzeżone</footer>
+</body>
+</html>
